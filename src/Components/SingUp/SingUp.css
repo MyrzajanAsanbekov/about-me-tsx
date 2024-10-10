@@ -1,0 +1,93 @@
+.singupp {
+  background: #0a051f;
+  height: 100vh;
+}
+
+.singupp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.singupp-modal {
+  width: 500px;
+  height: 500px;
+  background-color: #000000;
+  color: rgb(16, 6, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  animation: slide-in-right 1s ease forwards;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 20px;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(500%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.singup-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.singup-inputs input {
+  width: 250px;
+  padding: 13px 10px;
+  background: none;
+  outline-color: yellow;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+}
+.singup-inputs input::placeholder {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.singup-inputs button {
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.singup-inputs h1 {
+  color: white;
+  font-size: 33px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.singup-inputs a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-bottom: 1px solid white;
+}
+
+.singup-inputs span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+  font-size: 27px;
+}

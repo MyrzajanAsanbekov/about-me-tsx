@@ -1,0 +1,109 @@
+.logins {
+  background: #0a051f;
+  height: 100vh;
+}
+
+.logins {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logins-modal {
+  width: 500px;
+  height: 500px;
+  background-color: #000000;
+  color: rgb(16, 6, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: slideIn 1s ease-out forwards;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 20px;
+}
+
+.logins-modal span {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+  font-size: 27px;
+}
+
+.logins-modal h1 {
+  color: white;
+  font-size: 33px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-500%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logins-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logins-inputs input {
+  width: 250px;
+  padding: 13px 10px;
+  background: none;
+  outline-color: yellow;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.logins-inputs input::placeholder {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.logins-inputs button {
+  width: 170px;
+  height: 35px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+  border-radius: 5px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.logins-inputs a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  border-bottom: 1px solid white;
+}
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #000000;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
